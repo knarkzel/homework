@@ -1,0 +1,58 @@
+#+TITLE: Homework for Rust: Structs and Enums
+#+AUTHOR: Odd-Harald Lillestø Myhren
+
+* *Problem 1*
+
+Define a struct named =Person= with the following fields:
+
+- =name=: A string representing the person's name
+- =age=: An integer representing the person's age
+- =email=: A string representing the person's email address
+
+\noindent
+After defining the =Person=, create a =Person= from this description:
+James is 37 years old, and his email is james@gmail.com
+
+* Problem 2
+
+Create a struct named =Counter= with a single field =count= of type =u32=.
+Then, implement two methods for the =Counter= struct:
+
+- =new=: Creates a new =Counter= instance with an initial count of 0.
+- =increment=: Increments the count by 1.
+
+* Problem 3
+
+Create an enum named =Direction= with four variants:
+
+- =Up=
+- =Down=
+- =Left=
+- =Right=
+
+\noindent
+Implement a method named =move_point= that takes two parameters: a tuple
+struct =Point= with =x= and =y= coordinates (both of type i32) and a =Direction=
+instance. The method should return a new =Point= instance with the updated
+coordinates based on the given direction:
+
+- =Up=: Decrease the =y= coordinate by 1
+- =Down=: Increase the =y= coordinate by 1
+- =Left=: Decrease the =x= coordinate by 1
+- =Right=: Increase the =x= coordinate by 1
+
+* Problem 4
+
+Create an enum named =Shape= with three variants:
+
+- =Circle=: Takes a single parameter representing the radius (as a floating-point number).
+- =Rectangle=: Takes two parameters representing the width and height (both as floating-point numbers).
+- =Triangle=: Takes three parameters representing the lengths of the three sides (all as floating-point numbers).
+  
+\noindent
+Implement a method named =area= for the =Shape= enum that calculates and returns the area of the corresponding shape. Use the following formulas for the different shapes:
+
+- =Circle=: $\pi \cdot \text{{radius}}^2$
+- =Rectangle=: $\text{{width}} \cdot \text{{height}}$
+- =Triangle=: $\sqrt{{s \cdot (s - \text{{side1}}) \cdot (s - \text{{side2}}) \cdot (s - \text{{side3}})}}, \text{{ where }} s = \frac{{\text{{side1}} + \text{{side2}} + \text{{side3}}}}{2}$
+

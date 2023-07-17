@@ -1,0 +1,48 @@
+#+TITLE: Homework for Common Programming Concepts
+#+AUTHOR: Odd-Harald Lillestø Myhren
+#+OPTIONS: toc:nil num:nil html-postamble:nil html-style:nil
+#+LANGUAGE: norwegian
+#+LATEX_HEADER: \usepackage[margin=1.5in]{geometry}
+
+* How to convert temperature from Fahrenheit to Celsius. 
+
+To convert a temperature from Fahrenheit to Celsius, you can use the following formula:
+
+1. Start with the temperature in Fahrenheit.
+2. Subtract 32 from the Fahrenheit temperature.
+3. Multiply the result by 5/9.
+4. The resulting value is the temperature in Celsius.
+
+\noindent
+For example, let's convert 75 degrees Fahrenheit to Celsius:
+
+1. Start with 75 degrees Fahrenheit.
+2. Subtract 32: 75 - 32 = 43.
+3. Multiply by 5/9: 43 * 5/9 = 23.89.
+4. Therefore, 75 degrees Fahrenheit is approximately equal to 23.89 degrees Celsius.
+
+\newpage
+
+* Implement a Rust program that converts temperature from Fahrenheit to Celsius. 
+
+#+BEGIN_SRC
+fn main() {
+    let degrees_fahrenheit = 32.0;
+}
+#+END_SRC
+
+The program should contain a variable named =degrees_fahrenheit=
+that is a =f32=. Then write a function named =fahrenheit_to_celsius=
+which takes a variable named =degrees= that is a =f32=, and returns
+=f32=. This function should convert the degrees in fahrenheit to celsius.
+Here's a table of the kind of values your program should return:
+
+| Fahrenheit | Celsius |
+|------------+---------|
+|        -40 |     -40 |
+|         -4 |     -20 |
+|         32 |       0 |
+|         50 |      10 |
+|         77 |      25 |
+|         86 |      30 |
+|        104 |      40 |
