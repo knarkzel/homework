@@ -1,5 +1,7 @@
 #+TITLE: Homework for Rust: Structs and Enums
 #+AUTHOR: Odd-Harald Lillestø Myhren
+#+OPTIONS: toc:nil num:nil html-postamble:nil html-style:nil
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
 
 * *Problem 1*
 
