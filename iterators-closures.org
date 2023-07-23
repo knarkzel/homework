@@ -1,0 +1,29 @@
+#+TITLE: Homework for Iterators & Closures
+#+AUTHOR: Odd-Harald Lillestø Myhren
+#+OPTIONS: toc:nil num:nil html-postamble:nil html-style:nil
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+
+* Problem 1: Iterator Basics
+   - Write a Rust program that defines a vector of integers containing values [1, 2, 3, 4, 5].
+   - Use an iterator to print out each element in the vector, separated by spaces.
+
+* Problem 2. Map and Filter
+   - Write a Rust program that defines a vector of integers containing values [10, 20, 30, 40, 50].
+   - Use an iterator and the `map` method to create a new vector that contains each element of the original vector multiplied by 2.
+   - Use another iterator and the `filter` method to create a new vector that contains only the elements from the original vector that are greater than 25.
+   - Print both resulting vectors.
+
+* Problem 3. Fold (Reduce)
+   - Write a Rust program that defines a vector of integers containing values [1, 2, 3, 4, 5].
+   - Use an iterator and the =fold= method to calculate the sum of all elements in the vector.
+   - Print the final sum.
+
+* Problem 4. Closures
+   - Write a closure that takes an integer as an argument and returns the square of that integer.
+   - Test the closure by passing different integers to it and printing the results.
+
+* Problem 5. Closures with Capture
+   - Write a Rust program that defines a vector of integers containing values [1, 2, 3, 4, 5].
+   - Define a variable `multiplier` and set its value to 3.
+   - Create a closure that takes an integer as an argument and returns the product of that integer and the `multiplier` variable.
+   - Use a for loop on the values [1, 2, 3, 4, 5], then run the closure on each value and print the output
