@@ -1,0 +1,30 @@
+#+TITLE: Homework for Rust: Structs and Enums
+#+AUTHOR: Odd-Harald Lillestø Myhren
+#+OPTIONS: toc:nil num:nil html-postamble:nil html-style:nil
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+
+* *Task 1: Design Your Creatures (Using Structs)*
+
+In your Rust-powered realm, you need a variety of creatures to populate
+the land. Create at least three unique creatures using structs. Each
+creature should have a name, a type (e.g., "Goblin," "Elf," "Dragon"),
+health points, and attack power. Write a Rust program that defines
+these creatures and their attributes. This means you need at least three different
+structs with these fields.
+
+* Task 2: Create Your Magical Items (Using Enums)
+
+No adventure is complete without magical items! Design a set of enchanting
+items using enums. Create three types of items: weapons, armor, and
+consumables. Each enum variant should have different attributes such
+as damage points for weapons, defense points for armor, and effects
+for consumables (use *[[https://doc.rust-lang.org/rust-by-example/custom_types/enum.html][struct-like]]* syntax). Write Rust code to showcase the different types of
+magical items you've created.
+
+* Task 3: Train Your Creatures (Implementing Methods)
+
+Your creatures need to be battle-ready! Implement a method for your
+creatures that allows them to train and improve their attributes. For
+instance, a creature could gain extra health or attack power through
+training. Write Rust code that demonstrates how a creature's attributes
+change after training. You should at least have a =train(&self)=.
